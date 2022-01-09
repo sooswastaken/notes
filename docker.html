@@ -1,0 +1,72 @@
+<p><strong>Docker Notes</strong></p>
+<p>"Hello, World!".replace("World", "Docker")</p>
+<p>What is docker?</p>
+<ul>
+<li>A platform for building, running and shipping applications in a consistent manner</li>
+<li>Easily package an application on any machine to run</li>
+<li>Setting up a new machine, docker-compose up creates a container.</li>
+<li>Can run different versions of languages and tools at the same time ( in different containers )&nbsp;</li>
+<li>Isolated env, can remove an entire app with 1 command clearing storage.</li>
+</ul>
+<p><strong>Virtual Machines vs Containers</strong></p>
+<p>Container</p>
+<ul>
+<li>Same isolation as a vm</li>
+<li>Are lightweight</li>
+<li>Use os of the host</li>
+<li>Starts quickly</li>
+<li>Needs less hardware resonances than VMs</li>
+</ul>
+<p>Virtual Machine&nbsp;</p>
+<ul>
+<li>Abstraction of a machine</li>
+<li>Hypervisor - manage v&rsquo;ms&nbsp;</li>
+<li>Run application in isolation</li>
+<li>Cons</li>
+<li>Each VM needs a full blown OS</li>
+<li>Slow to start</li>
+<li>Response intensive</li>
+</ul>
+<p><strong>Architecture of Docker</strong></p>
+<p>Client server Architecture</p>
+<p>Client talks to server ( docker engine ) in rest api</p>
+<p>( Container is a process on your machine )</p>
+<p>All containers share the same kernel</p>
+<p>Since kernels are different in different OS's you can only run linux containers on linux containers etc etc etc.</p>
+<p>Windows: Windows and linux</p>
+<p>Linux: Linux</p>
+<p>Macos: Linux VM (Very light weight)</p>
+<p><strong>Installing Docker</strong></p>
+<p>docker version</p>
+<p>^ to get version</p>
+<p><a href="https://docs.docker.com/get-docker" target="_blank" rel="noopener">https://docs.docker.com/get-docker</a></p>
+<p>(Docker desktop) (docker engine + other tools)</p>
+<p>Download from docker hub</p>
+<p>macOS - download and run docker, will appear in top task bar (important) wait for it to show up</p>
+<p>WSL 2 Installation is incomplete (Windows)</p>
+<p>Click link and download and then restart</p>
+<p>( Wait for docker to run )</p>
+<p>Run docker version again</p>
+<p><strong>Development Workflow</strong>
+<p>Take a app and dockerise it</p>
+<p>Add a docker file&nbsp;</p>
+<p>Includes instructions to make a app into a image</p>
+<p>Image contains the following</p>
+<p>A cut-down os</p>
+<p>A runtime environment</p>
+<p>Application files</p>
+<p>Third party libs</p>
+<p>Env vars</p>
+<p>Once we have image</p>
+<p>Tell docker to run container with the image</p>
+<p>docker run &hellip;</p>
+<p>You can store images on docker up</p>
+<p>Extra Notes</p>
+<ul>
+<li>Works on home machine/dev env but not production env</li>
+<li>Software version mismatch</li>
+<li>Different configuration settings</li>
+</ul>
+
+
+<a href="/">Return Home</a>
